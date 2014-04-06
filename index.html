@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>DBC Medical Diagnosis Form</title>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+  	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+  	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+</head>
+<body>
+	
+	<div class="big_container">
+		<img src="img/cover.jpg" width="100%" height="10%">
+		<div class="container">
+			<p id="header">Medical Diagnostic Form</p>
+			<p>For those who are believed to be ill, please fill out this form below so that the doctors have a better understanding of your sickness. This promotes efficient and effective appointment meetings.</p>
+			<form action="#" method="POST" name="sick_form">
+				<fieldset>
+					<legend><font color="#858585" >General Information</font></legend><br>
+					<label for="firstname" class="grid_3 omega">First Name:</label>
+					<input type="text" name="Firstname" id="firstname" width: 200px; margin-left: 0px; style="height:30px"><br><br>
+					<label for="lastname" class="grid_3 omega">Last Name:</label>
+					<input type="text" name="Lastname" id="lastname" width: 200px; margin-left: 0px; style="height:30px"><br><br>
+					<label for="phone" class="grid_3 omega">Phone Number:</label>
+					<input type="text" name="Phone" id="phone" width: 200px; margin-left: 0px; style="height:30px"><br><br>
+					<label for="dbcaccount" class="grid_3 omega">DBC Account Number:</label>
+					<input type="password" name="DBCaccount" id="dbcaccount" width: 200px; margin-left: 0px; style="height:30px"><br><br>
+					<label for ="cohort" class="grid_3 omega">Which Cohort Do You Belong To?</label>
+					<select name="Cohorts" id="cohort">
+						<optgroup label="Chicago">
+							<option>Dragonflies</option>
+							<option>Grasshoppers</option>
+							<option>Foxes</option>
+							<option>Nighthawks</option>
+							<option>Otters</option>
+						</optgroup>
+						<optgroup label="New York">
+							<option>Fiddler Crabs</option>
+							<option>Spring Peepers</option>
+						</optgroup>
+						<optgroup label="San Francisco">
+							<option>Fiery Skippers</option>
+							<option>Pocket Gophers</option>
+							<option>Red Admirals</option>
+							<option>Fence Lizards</option>
+							<option>Chorus Frogs</option>
+							<option>Purple Martins</option>
+							<option>Mule Deer</option>
+							<option>Tiger Swallowtails</option>
+							<option>Gopher Snakes</option>
+							<option>Brown Bats</option>
+							<option>Pocket Mice</option>
+							<option>Largemouth Bass</option>
+							<option>Raccoons</option>
+							<option>Dessert Rabbits</option>
+						</optgroup>
+					</select><br>
+					<br>	
+					<br>
+					<!-- <input type="radio" name="gender" value="Male" id="male"><label for="male">Male</label><br>
+					<input type="radio" name="gender" value="Female" id="female"><label for="female">Female</label><br> -->
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Medical Information</legend><br>
+					<label for="medhistory">Please Check if You Have Experienced Any of the Following:</label><br><br>
+					<table width="550px">
+						<tr>
+							<td><input type="checkbox" name="medhistory" value="AIDS/HIV" id="medhistory">AIDS/HIV Positive<br></td>
+							<td><input type="checkbox" name="medhistory" value="aizheimer" id="medhistory">Alzheimer's Disease<br></td>
+							<td><input type="checkbox" name="medhistory" value="Anaphylaxis" id="medhistory">Anaphylaxis<br></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="medhistory" value="Anemia" id="medhistory">Anemia<br></td>
+							<td><input type="checkbox" name="medhistory" value="Arthritis" id="medhistory">Arthritis<br></td>
+							<td><input type="checkbox" name="medhistory" value="HeartValve" id="medhistory">Artificial Heart Valve<br></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="medhistory" value="Asthma" id="medhistory">Asthma<br></td>
+							<td><input type="checkbox" name="medhistory" value="Blooddisease" id="medhistory">Blood Disease<br></td>
+							<td><input type="checkbox" name="medhistory" value="Breathing" id="medhistory">Breathing Problems<br></td>
+						</tr>	
+						<tr>
+							<td><input type="checkbox" name="medhistory" value="Cancer" id="medhistory">Cancer<br></td>
+							<td><input type="checkbox" name="medhistory" value="Chemotherapy" id="medhistory">Chemotherapy<br></td>
+							<td><input type="checkbox" name="medhistory" value="ChestPains" id="medhistory">Chest Pains<br></td>
+						</tr>	
+						<tr>
+							<td><input type="checkbox" name="medhistory" value="Cordsores" id="medhistory">Cordsores<br></td>
+							<td><input type="checkbox" name="medhistory" value="Convulsions" id="medhistory">Convulsions<br></td>
+							<td><input type="checkbox" name="medhistory" value="Diabetes" id="medhistory">Diabetes<br></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="medhistory" value="DrugAddiction" id="medhistory">Drug Addiction<br></td>
+							<td><input type="checkbox" name="medhistory" value="Emphysema" id="medhistory">Emphysema<br></td>
+							<td><input type="checkbox" name="medhistory" value="Epilepsy" id="medhistory">Epilepsy<br></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="medhistory" value="ExcessiveThirst" id="medhistory">Excessive Thirst<br></td>
+							<td><input type="checkbox" name="medhistory" value="Dizziness" id="medhistory">Dizziness<br></td>
+							<td><input type="checkbox" name="medhistory" value="Diarrhea" id="medhistory">Diarrhea<br></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="medhistory" value="GenitalHerpes" id="medhistory">Genital Herpes<br></td>
+							<td><input type="checkbox" name="medhistory" value="Glaucoma" id="medhistory">Glaucoma<br></td>
+							<td><input type="checkbox" name="medhistory" value="HeartAttack" id="medhistory">Heart Attack<br></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="medhistory" value="Hemophilia" id="medhistory">Hemophilia<br></td>
+							<td><input type="checkbox" name="medhistory" value="Hepatitis" id="medhistory">Hepatitis<br></td>
+							<td><input type="checkbox" name="medhistory" value="HIghBloodPressure" id="medhistory">High Blood Pressure<br></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="medhistory" value="Hives" id="medhistory">Hives<br></td>
+							<td><input type="checkbox" name="medhistory" value="Hypoglycemia" id="medhistory">Hypoglycemia<br></td>
+							<td><input type="checkbox" name="medhistory" value="Leukemia" id="medhistory">Leukemia<br></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="medhistory" value="LiverDisease" id="medhistory">Liver Disease<br></td>
+							<td><input type="checkbox" name="medhistory" value="LowBloodPressure" id="medhistory">Low Blood Pressure<br></td>
+							<td><input type="checkbox" name="medhistory" value="ParathyroidDisease" id="medhistory">Parathyroid Disease<br></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="medhistory" value="RadiationTreatments" id="medhistory">Radiation<br></td>
+							<td><input type="checkbox" name="medhistory" value="RecentWeightLoss" id="medhistory">Recent Weight Loss<br></td>
+							<td><input type="checkbox" name="medhistory" value="Rheumatism" id="medhistory">Rheumatism<br></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="medhistory" value="ScarletFever" id="medhistory">Scarlet Fever<br></td>
+							<td><input type="checkbox" name="medhistory" value="SickleCellDisease" id="medhistory">Sickle Cell Disease<br></td>
+							<td><input type="checkbox" name="medhistory" value="SinusTrouble" id="medhistory">Sinus Trouble<br></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="medhistory" value="StomachDisease" id="medhistory">Recent Weight Loss<br></td>
+							<td><input type="checkbox" name="medhistory" value="Stroke" id="medhistory">Rheumatism<br></td>
+							<td><input type="checkbox" name="medhistory" value="Swelling" id="medhistory">Scarlet Fever<br></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="medhistory" value="Tuberculosis" id="medhistory">Sickle Cell Disease<br></td>
+							<td><input type="checkbox" name="medhistory" value="Tumors" id="medhistory">Sinus Trouble<br></td>
+						</tr>			
+					</table><br>
+					<input type="checkbox" name="medhistory" value="Others" id="medhistory">Other:
+	     			<input type="text" name="Other" id="medhistory" width: 200px; margin-left: 0px;>
+				</fieldset>	
+				<br>
+				<label for="essay">If you take medication, please list them all below.</label><br>
+	      		<textarea name="essay" id="essay" rows="6" cols="50"></textarea><br>
+				<label for="essay">Additional Comments</label><br>
+	      		<textarea name="essay" id="essay" rows="6" cols="50"></textarea><br><br>
+
+	      		<fieldset>
+	      			<input type="checkbox" name="agreement" value="Agreement" id="agreement"> To the best of my knowledge, the questions on this form have been accurately answered. I understand that providing incorrect information can be dangerous to my patient's health. It is my responsibility to inform the office of any changes in medical status.<br>
+	      			<br>
+	      			<label for="signature">Electronic Signature</label>
+	      			<input type="text" name="signature" id="signature" width: 200px style="height:30px">
+	      		</fieldset>	<br>
+
+	      		<input type="submit" value="Submit Form" id="submit"><br><br><br>
+
+	      		
+
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
